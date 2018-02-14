@@ -1,0 +1,36 @@
+---
+title: "FARS Summaries"
+author: "Gerald Shapiro"
+date: "February 12, 2018"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## FARS
+
+THe National Highway Traffic Safety Administration (NHTSA) of the US government collects, organizes and distributes data about US traffic  safety data. See [https://www.data.gov](Data.gov) or [https://www.nhtsa.gov/research-data](NHTSA). This package provides tools to summarize and vizualize data from the NHTSA's Fatality Analysis Reporting Systems (FARS).  
+
+The tools in this package assume that the FARS data files are in a comma-separated-value (csv) format. The csv files can be inside a compressed archive (e.g. zip or bz2). It is the user's responsibility to download the desired files from FARS. There will be one file per year of interest.
+
+**NOTE:** Although FARS data goes back to 1975, the formats provided are not the same for every year.
+
+## Tools in this package
+
+Two summary tools are provided. `fars_summarize_years()` will provide a tibble with the number of fatalities by month for each of the years specified. The number of fatalities is based on all state records in the yearly data files. An example is below
+
+```{r sum, echo=TRUE}
+fars_summarize_years(2013:2015)
+```
+The `fars_map_state()` tool creates a map of the location of every fatal accident in a state for a particular year. Below is an example for Florida in 2014.
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r map, echo=FALSE}
+fars_map_state(12,2014)
+```
+
