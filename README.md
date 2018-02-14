@@ -1,6 +1,6 @@
 # FSH
 
-The goal of FSH is to provide tools to summarize fatal accident data in the National Highway Transportation Safety Administration's Fatal Accident Reporting System.
+The goal of FSH is to provide tools to summarize fatal accident data in the National Highway Traffic Safety Administration's Fatality Analysis Reporting System.
 
 ## Installation
 
