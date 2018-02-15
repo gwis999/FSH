@@ -1,3 +1,8 @@
+library(dplyr)
+library(readr)
+library(maps)
+library(tidyr)
+library(graphics)
 #' Read a fars data set
 #'
 #' Read the named fars data set and return a tibble.
