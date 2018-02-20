@@ -32,7 +32,7 @@ Two summary tools are provided. `fars_summarize_years()` will provide a tibble w
 
 ```{r sum, echo=TRUE}
 library("FSH")
-fars_summarize_years(2013:2015)
+fars_summarize_years(list(2013:2015))
 ```
 The `fars_map_state()` tool creates a map of the location of every fatal accident in a state for a particular year. Below is an example.
 
