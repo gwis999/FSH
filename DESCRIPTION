@@ -15,4 +15,5 @@ Suggests: knitr,
 VignetteBuilder: knitr
 Imports: dplyr,
     maps,
-    graphics
+    graphics,
+    readr
