@@ -3,7 +3,7 @@ Type: Package
 Title: Summarizes fatal accident data
 Version: 0.1.0
 Author: Aristotle
-Maintainer: This package will not be maintained after it builds once
+Maintainer: Noe Wun <Noe.Wun@noplace.com>
 Description: Tools to read traffic fatality files and present in a useful
     format. Includes a by-state summary of fatalities per year, and a
     map of fatalities in a given state and a given year.
