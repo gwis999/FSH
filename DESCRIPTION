@@ -3,10 +3,11 @@ Type: Package
 Title: Summarizes fatal accident data
 Version: 0.1.0
 Author: Aristotle
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Maintainer: This package will not be maintained after it builds once
+Description: Tools to read traffic fatality files and present in a useful
+    format. Includes a by-state summary of fatalities per year, and a
+    map of fatalities in a given state and a given year.
+License: Creative Commons
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
