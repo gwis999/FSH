@@ -31,17 +31,17 @@ The tools in this package assume that the FARS data files are in a comma-separat
 
 Two summary tools are provided. `fars_summarize_years()` will provide a tibble with the number of fatalities by month for each of the years specified. The number of fatalities is based on all state records in the yearly data files. An example is below
 
-```{r sum, echo=TRUE}
+```{r sum, echo=3}
 library("FSH")
-setwd(system.file("extdata",package="FSH")
+setwd(system.file("extdata",package="FSH"))
 fars_summarize_years(2013:2015)
 ```
 
 The `fars_map_state()` tool creates a map of the location of every fatal accident in a state for a particular year. Below is an example.
 
-```{r map, echo=TRUE, fig.cap = "Fatal Accidents in Florida, 2014."}
+```{r map, echo=3, fig.cap = "Fatal Accidents in Florida, 2014."}
 library("FSH")
-setwd(system.file("extdata",package="FSH")
+setwd(system.file("extdata",package="FSH"))
 fars_map_state(12,2014)
 ```
 
