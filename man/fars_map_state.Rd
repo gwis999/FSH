@@ -21,8 +21,8 @@ If there are multiple accidents at a location, there will be only
     one data point at that location on the map
 }
 \examples{
-  fars_map_state(1,2014)
-  fars_map_state("3",2012)
-  fars_map_state(3, "2012")
+  \dontrun{fars_map_state(1,2014)}
+  \dontrun{fars_map_state("3",2012)}
+  \dontrun{fars_map_state(3, "2012")}
 
 }

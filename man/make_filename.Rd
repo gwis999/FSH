@@ -20,7 +20,7 @@ name for that year
 Does not check for valid year or existence of data file
 }
 \examples{
- make_filename(2013)
- make_filename("2013")
+ \dontrun{make_filename(2013)}
+ \dontrun{make_filename("2013")}
 
 }

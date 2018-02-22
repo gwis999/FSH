@@ -35,8 +35,8 @@ fars_read <- function(filename) {
 #' @note Does not check for valid year or existence of data file
 #'
 #' @examples
-#'  make_filename(2013)
-#'  make_filename("2013")
+#'  \dontrun{make_filename(2013)}
+#'  \dontrun{make_filename("2013")}
 #'
 make_filename <- function(year) {
         year <- as.integer(year)
@@ -58,10 +58,10 @@ make_filename <- function(year) {
 #'
 #' @import dplyr
 #'
-#' @examplesuse_vig
-#'    fars_read_years(list(2012))
-#'    fars_read_years(list("2012"))
-#'    fars_read_years(list(2012:2014))
+#' @examples
+#'    \dontrun{fars_read_years(list(2012))}
+#'    \dontrun{fars_read_years(list("2012"))}
+#'    \dontrun{fars_read_years(list(2012:2014))}
 #'
 fars_read_years <- function(years) {
         lapply(years, function(year) {
@@ -91,9 +91,9 @@ fars_read_years <- function(years) {
 #' @return tibble with number of fatal accidents in a tabular format
 #'
 #' @examples
-#'  fars_summarize_years(list(2012))
-#'  fars_summarize_years(list("2012","2014"))
-#'  fars_summarize_years(list(2012:2014))
+#'  \dontrun{fars_summarize_years(list(2012))}
+#'  \dontrun{fars_summarize_years(list("2012","2014"))}
+#'  \dontrun{fars_summarize_years(list(2012:2014))}
 
 #' @import dplyr
 #' @importFrom tidyr spread
@@ -121,9 +121,9 @@ fars_summarize_years <- function(years) {
 #'     one data point at that location on the map
 #'
 #' @examples
-#'   fars_map_state(1,2014)
-#'   fars_map_state("3",2012)
-#'   fars_map_state(3, "2012")
+#'   \dontrun{fars_map_state(1,2014)}
+#'   \dontrun{fars_map_state("3",2012)}
+#'   \dontrun{fars_map_state(3, "2012")}
 #'
 #' @importFrom maps map
 #' @importFrom graphics points
