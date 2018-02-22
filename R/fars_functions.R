@@ -1,3 +1,5 @@
+globalVariables(c("STATE","MONTH","year"), package = "FSH")
+
 #' Read a fars data set
 #'
 #' Read the named fars data set and return a tibble.

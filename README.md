@@ -16,8 +16,7 @@ devtools::install_github("gwis999/FSH")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` {r ex1, echo = 2}
-setwd("extdata")
+``` r
 fars_summarize_years(2013:2014)
 ```
 
