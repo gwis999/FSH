@@ -20,7 +20,9 @@ file for a year, a message is printed warning of an invalid year. Valid years ar
 processed
 }
 \examples{
+ \dontrun{
  fars_summarize_years(list(2012))
  fars_summarize_years(list("2012","2014"))
  fars_summarize_years(list(2012:2014))
+}
 }
