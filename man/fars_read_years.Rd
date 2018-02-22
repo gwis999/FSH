@@ -21,8 +21,9 @@ Returns a NULL list element if a year in the list is not found in the local data
 and issues a warning.
 }
 \examples{
+   \dontrun{
    fars_read_years(list(2012))
    fars_read_years(list("2012"))
    fars_read_years(list(2012:2014))
-
+}
 }
